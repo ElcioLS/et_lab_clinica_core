@@ -1,0 +1,23 @@
+name: et_lab_clinica_core
+description: "My project at ADF"
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+   sdk: flutter
+  signals_flutter: ^3.0.0
+  top_snackbar_flutter: ^3.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
