@@ -6,3 +6,5 @@ export 'src/fp/unit.dart';
 export 'src/helpers/messages.dart';
 export 'src/restClient/rest_client.dart';
 export 'src/constants/local_storage_constants.dart';
+export 'src/loader/lab_clinica_loader.dart';
+export 'src/lab_clinica_core_config.dart';
