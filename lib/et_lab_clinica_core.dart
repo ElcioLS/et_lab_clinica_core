@@ -11,3 +11,4 @@ export 'src/lab_clinica_core_config.dart';
 export 'src/exceptions/auth_exception.dart';
 export 'src/exceptions/repository_exception.dart';
 export 'src/exceptions/service_exception.dart';
+export 'src/theme/lab_clinica_theme.dart';

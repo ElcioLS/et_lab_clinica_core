@@ -1,5 +1,6 @@
 import 'package:asyncstate/asyncstate.dart';
 import 'package:et_lab_clinica_core/et_lab_clinica_core.dart';
+import 'package:et_lab_clinica_core/src/theme/lab_clinica_theme.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_getit/flutter_getit.dart';
@@ -25,9 +26,6 @@ class LabClinicaCoreConfig extends StatelessWidget {
     return FlutterGetIt(
       debugMode: kDebugMode,
       bindings: binding,
-      bindingsBuilder: () => [
-        Bind.lazySingleton((i) => "Batata"),
-      ],
       pages: [
         ...pages ?? [],
         ...pagesBuilders ?? [],
@@ -38,6 +36,8 @@ class LabClinicaCoreConfig extends StatelessWidget {
           loader: LabClinicaLoader(),
           builder: (navigatorObserver) {
             return MaterialApp(
+              theme: LabClinicaTheme.lightTheme,
+              darkTheme: LabClinicaTheme.dartkTheme,
               navigatorObservers: [
                 navigatorObserver,
                 flutterGetItNavObserver,
