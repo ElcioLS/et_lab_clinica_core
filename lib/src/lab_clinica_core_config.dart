@@ -13,6 +13,7 @@ class LabClinicaCoreConfig extends StatelessWidget {
     this.pagesBuilders,
     this.modules,
     required this.title,
+    this.didStart,
   });
 
   final ApplicationBindings? binding;
@@ -20,6 +21,7 @@ class LabClinicaCoreConfig extends StatelessWidget {
   final List<FlutterGetItPageBuilder>? pagesBuilders;
   final List<FlutterGetItModule>? modules;
   final String title;
+  final VoidCallback? didStart;
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +37,12 @@ class LabClinicaCoreConfig extends StatelessWidget {
         return AsyncStateBuilder(
           loader: LabClinicaLoader(),
           builder: (navigatorObserver) {
+            if (didStart != null) {
+              didStart!();
+            }
+
             return MaterialApp(
+              debugShowCheckedModeBanner: false,
               theme: LabClinicaTheme.lightTheme,
               darkTheme: LabClinicaTheme.dartkTheme,
               navigatorObservers: [

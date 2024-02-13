@@ -28,10 +28,28 @@ final class LabClinicaTheme {
         color: blueColor,
         fontWeight: FontWeight.w600,
       ),
+      border: _defaultInputBorder,
       enabledBorder: _defaultInputBorder,
       focusedBorder: _defaultInputBorder,
       errorBorder: _defaultInputBorder.copyWith(
         borderSide: const BorderSide(color: Colors.red),
+      ),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Colors.white,
+        side: const BorderSide(
+          color: blueColor,
+        ),
+        foregroundColor: blueColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
+        textStyle: const TextStyle(
+          fontFamily: 'Montserrat',
+          fontSize: 14,
+          fontWeight: FontWeight.bold,
+        ),
       ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
@@ -42,9 +60,10 @@ final class LabClinicaTheme {
           borderRadius: BorderRadius.circular(16),
         ),
         textStyle: const TextStyle(
-            fontFamily: 'Montserrat',
-            fontSize: 14,
-            fontWeight: FontWeight.w700),
+          fontFamily: 'Montserrat',
+          fontSize: 14,
+          fontWeight: FontWeight.bold,
+        ),
       ),
     ),
   );
