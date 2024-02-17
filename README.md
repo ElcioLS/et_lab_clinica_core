@@ -1,39 +1,40 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# et_lab_clinica_core
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+# Projeto Flutter Core - Fevereiro de 2024
+Um projeto Flutter para ser usado em todos os projetos do ecossistema funcionando como um package próprio.
+Cliente/Paciente efetua cadastro diretamente no sistema utilizando a coleta de informações pelo tablet.
+Aparece os dados e senhas diretamente na tela de senhas em uma SmartTV.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Sobre o projeto
 
-## Features
+Este projeto foi desenvolvido durante o evento Flutter Experience da academia do Flutter de Rodrigo Rahman.
+Durante uma semana pude aprender através de aulas gratuitas no youtube muitas técnicas de programação.
+Foi muito conhecimento adquirido ao lono do evento.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## Conhecimentos adquiridos e empregados
 
-## Getting started
+Conheci algumas funcionalizades novas do Dart e Flutter e aperfeiçoei minhas habilidades em lógica de programação.
+Durante o evento pude notar uma evelução expressiva em meu nível de raciocínio e meu mindset de dev mobile.
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## Packages utilizados nessa aplicação.
 
-## Usage
+- environment:
+-  sdk: '>=3.2.6 <4.0.0'
+-  flutter: ">=1.17.0"
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+- dependencies:
+-  flutter:
+-   sdk: flutter
+-  signals_flutter: ^3.0.0
+-  top_snackbar_flutter: ^3.1.0
+-  asyncstate: ^2.1.1-dev.1
+-  loading_animation_widget: ^1.2.0+4
+-  dio: ^5.4.0
+-  shared_preferences: ^2.2.2
+-  flutter_getit: ^2.0.0
 
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+- dev_dependencies:
+-  flutter_test:
+-    sdk: flutter
+-  flutter_lints: ^2.0.0
